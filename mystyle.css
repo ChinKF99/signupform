@@ -1,0 +1,52 @@
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar_container{
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+}
+
+.background_image{
+    width: 100%;
+    height: 100%;
+    /* Greater z-index will be send to the front */
+    z-index: 1;
+}
+
+.odin_logo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    /* To make the positioning base on center of image instead of top side */
+    margin: -75px 0 0 -75px;
+    z-index: 3;
+}
+
+.odin_logo_color{
+    background:rgba(1,1,1,0.5);
+    position: absolute;
+    width: 30vw;
+    height: 150px;
+    top: 50%;
+    /* To match the position of odin_logo */
+    margin-top: -75px;
+    z-index:2;
+}
+
+/* To fix the text, to fit the div size */
+.odin_text{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    color: white;
+    font-size: 1;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 0;
+    z-index: 3;
+}
