@@ -1,16 +1,21 @@
-.body{
+body{
     display: flex;
-    flex-direction: row;
+    margin-right: 0px;
+}
+
+pre{
+    margin: 0px
 }
 
 .sidebar_container{
     width: 30vw;
     height: 100vh;
     position: relative;
+    margin-right: 10px;
 }
 
 .background_image{
-    width: 100%;
+    width: 30vw;
     height: 100%;
     /* Greater z-index will be send to the front */
     z-index: 1;
@@ -20,9 +25,10 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    top: 50%;
+    /* Position at 50% of view port */
+    top: 30%;
     left: 50%;
-    /* To make the positioning base on center of image instead of top side */
+    /* To make sure position is base on center or element */
     margin: -75px 0 0 -75px;
     z-index: 3;
 }
@@ -30,23 +36,48 @@
 .odin_logo_color{
     background:rgba(1,1,1,0.5);
     position: absolute;
-    width: 30vw;
+    width: 100%;
     height: 150px;
-    top: 50%;
+    top: 30%;
     /* To match the position of odin_logo */
+    /* To make sure position  is base on center or element */
     margin-top: -75px;
     z-index:2;
 }
 
-/* To fix the text, to fit the div size */
 .odin_text{
-    width: 150px;
-    height: 150px;
+    display: flex;
+    /* Set the container width to be at same size as the logo */
+    min-width: 150px;
+    min-height: 150px;
     position: absolute;
     color: white;
-    font-size: 1;
-    top: 50%;
+    /* Fixed at 80px for asthetic purposes */
+    font-size: 80px;
+    /* Position at 50% of view port */
+    top: 30%;
     left: 50%;
-    margin: -75px 0 0 0;
+    /* To make sure position is base on center or element */
+    margin: -75px 0 0 75px;
+    align-items: center;
     z-index: 3;
 }
+
+.form-container{
+    width: 70vw;
+    height: 100vh;
+}
+
+.intro{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_1{
+    font: arial ;
+}
+
